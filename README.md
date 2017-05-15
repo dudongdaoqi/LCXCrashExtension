@@ -65,6 +65,7 @@ recommend this：
 ```
 
 此demo为常见crash汇总与基本防护，详见demo
+----------
 基本原理：http://www.jianshu.com/p/2b2997749d2d
 
 
