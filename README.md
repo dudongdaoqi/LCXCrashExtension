@@ -1,32 +1,39 @@
 # LCXCrashExtension
 
-[![Version](https://img.shields.io/cocoapods/v/LCXCrashExtension.svg?style=flat)](http://cocoapods.org/pods/LCXCrashExtension)
-[![License](https://img.shields.io/cocoapods/l/LCXCrashExtension.svg?style=flat)](http://cocoapods.org/pods/LCXCrashExtension)
-[![Platform](https://img.shields.io/cocoapods/p/LCXCrashExtension.svg?style=flat)](http://cocoapods.org/pods/LCXCrashExtension)
 
 LCXCashExtension is the last defender of your code, protect your code to crash.
 
-Installation
-==============
 
-### CocoaPods
-
-1. Add `pod 'LCXCrashExtension'` to your Podfile.
-2. Run `pod install` or `pod update`.
-3. If you just protect you from crash, you don't need to include any header.
-   If you want to safely check, Import \<LCXCrashExtension.h\>.
-
-Requirements
-==============
-This library requires `iOS 8.0+` and `Xcode 8.0+`.
-
-License
-==============
-LCXCrashExtension is provided under the MIT license. See LICENSE file for details.
-
-How To Use
+like this，will no crash：
 ----------
-the crash part，don't need to import. All of them will not crash, as below.
+
+```objective-c
+    NSMutableArray *marray = [NSMutableArray new];
+    [marray objectAtIndex:1];
+    [marray addObject:nil];
+    [marray insertObject:nil atIndex:0];
+    [marray removeObjectAtIndex:2];
+    [marray replaceObjectAtIndex:3 withObject:@"1"];
+    [marray replaceObjectAtIndex:1 withObject:nil];
+```
+
+```objective-c
+     NSMutableDictionary *tempDict = [NSMutableDictionary new];
+    [tempDict setObject:nil forKey:@"1"];
+    [tempDict removeObjectForKey:@"2"];
+    [tempDict removeObjectForKey:nil];
+```
+
+```objective-c
+    NSMutableArray *marray = [NSMutableArray new];
+    [marray objectAtIndex:1];
+    [marray addObject:nil];
+    [marray insertObject:nil atIndex:0];
+    [marray removeObjectAtIndex:2];
+    [marray replaceObjectAtIndex:3 withObject:@"1"];
+    [marray replaceObjectAtIndex:1 withObject:nil];
+
+```
 
 ```objective-c
 
@@ -43,7 +50,8 @@ the crash part，don't need to import. All of them will not crash, as below.
 
 ```
 
-the protect part，Import \<LCXCrashExtension.h\>, use just like this
+recommend this：
+----------
 
 ```objective-c
 
@@ -55,3 +63,8 @@ the protect part，Import \<LCXCrashExtension.h\>, use just like this
   }
 
 ```
+
+此demo为常见crash汇总与基本防护，详见demo
+基本原理：http://www.jianshu.com/p/2b2997749d2d
+
+

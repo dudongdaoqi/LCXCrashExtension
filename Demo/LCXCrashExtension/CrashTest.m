@@ -83,15 +83,4 @@
     [tempDict removeObjectForKey:nil];
 }
 
-+ (void)singeCrash
-{
-    NSArray *array = [NSArray new];
-    [array objectAtIndex:0];
-    NSDictionary *dict = (NSDictionary *)array;
-    NSLog(@"%@",dict.allKeys);
-    
-    NSMutableDictionary *dict2 = (NSMutableDictionary *)array;
-    [dict2 removeAllObjects];
-}
-
 @end
