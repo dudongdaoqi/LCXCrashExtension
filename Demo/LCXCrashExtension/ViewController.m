@@ -5,6 +5,7 @@
 //  Created by lc on 17/1/18.
 //  Copyright © 2017年 lc. All rights reserved.
 //
+//原理介绍请见：http://www.jianshu.com/p/2b2997749d2d
 
 #import "ViewController.h"
 #import "ProtectTest.h"
