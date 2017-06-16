@@ -26,9 +26,20 @@
 		76BD3D411E6BBACC00D58D9F /* NSSet+LCXCrashExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 76BD3D401E6BBACC00D58D9F /* NSSet+LCXCrashExtension.m */; };
 		76BD3D441E6BBB7A00D58D9F /* NSMutableSet+LCXCrashExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 76BD3D431E6BBB7A00D58D9F /* NSMutableSet+LCXCrashExtension.m */; };
 		76BD3D471E6BBC7E00D58D9F /* NSUserDefaults+LCXCrashExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 76BD3D461E6BBC7E00D58D9F /* NSUserDefaults+LCXCrashExtension.m */; };
-		FCB0B50C1ECA6427000ED23F /* ProtectTest.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB0B50B1ECA6427000ED23F /* ProtectTest.m */; };
-		FCB0B50F1ECA6473000ED23F /* CrashTest.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB0B50E1ECA6473000ED23F /* CrashTest.m */; };
-		FCB0B5121ECA6715000ED23F /* TestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB0B5111ECA6715000ED23F /* TestModel.m */; };
+		FC8319CD1EF2FBBA002BBC95 /* CrashKVOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8319BA1EF2FBBA002BBC95 /* CrashKVOViewController.m */; };
+		FC8319CE1EF2FBBA002BBC95 /* CrashPushViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8319BD1EF2FBBA002BBC95 /* CrashPushViewController.m */; };
+		FC8319CF1EF2FBBA002BBC95 /* CrashArrayTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8319C01EF2FBBA002BBC95 /* CrashArrayTableViewController.m */; };
+		FC8319D01EF2FBBA002BBC95 /* CrashDictTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8319C21EF2FBBA002BBC95 /* CrashDictTableViewController.m */; };
+		FC8319D11EF2FBBA002BBC95 /* CrashNSStringTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8319C41EF2FBBA002BBC95 /* CrashNSStringTableViewController.m */; };
+		FC8319D21EF2FBBA002BBC95 /* CrashScopeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8319C61EF2FBBA002BBC95 /* CrashScopeViewController.m */; };
+		FC8319D31EF2FBBA002BBC95 /* CrashThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8319C91EF2FBBA002BBC95 /* CrashThreadViewController.m */; };
+		FC8319D41EF2FBBA002BBC95 /* ProtecTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8319CC1EF2FBBA002BBC95 /* ProtecTableViewController.m */; };
+		FC8319DC1EF2FC41002BBC95 /* UIViewController+Switcher.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8319DA1EF2FC41002BBC95 /* UIViewController+Switcher.m */; };
+		FC8319E51EF35194002BBC95 /* KVOTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8319E41EF35194002BBC95 /* KVOTwoViewController.m */; };
+		FC8319E81EF35375002BBC95 /* KVOModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8319E71EF35375002BBC95 /* KVOModel.m */; };
+		FC8319EB1EF356AC002BBC95 /* KVOOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8319EA1EF356AC002BBC95 /* KVOOneViewController.m */; };
+		FC8319EE1EF3598A002BBC95 /* TestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8319ED1EF3598A002BBC95 /* TestModel.m */; };
+		FC8319F11EF35AB0002BBC95 /* KVOProtectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8319F01EF35AB0002BBC95 /* KVOProtectViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,12 +80,35 @@
 		76BD3D431E6BBB7A00D58D9F /* NSMutableSet+LCXCrashExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableSet+LCXCrashExtension.m"; sourceTree = "<group>"; };
 		76BD3D451E6BBC7E00D58D9F /* NSUserDefaults+LCXCrashExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+LCXCrashExtension.h"; sourceTree = "<group>"; };
 		76BD3D461E6BBC7E00D58D9F /* NSUserDefaults+LCXCrashExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+LCXCrashExtension.m"; sourceTree = "<group>"; };
-		FCB0B50A1ECA6427000ED23F /* ProtectTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProtectTest.h; sourceTree = "<group>"; };
-		FCB0B50B1ECA6427000ED23F /* ProtectTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProtectTest.m; sourceTree = "<group>"; };
-		FCB0B50D1ECA6473000ED23F /* CrashTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrashTest.h; sourceTree = "<group>"; };
-		FCB0B50E1ECA6473000ED23F /* CrashTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrashTest.m; sourceTree = "<group>"; };
-		FCB0B5101ECA6715000ED23F /* TestModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestModel.h; sourceTree = "<group>"; };
-		FCB0B5111ECA6715000ED23F /* TestModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestModel.m; sourceTree = "<group>"; };
+		FC8319B91EF2FBBA002BBC95 /* CrashKVOViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrashKVOViewController.h; sourceTree = "<group>"; };
+		FC8319BA1EF2FBBA002BBC95 /* CrashKVOViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrashKVOViewController.m; sourceTree = "<group>"; };
+		FC8319BC1EF2FBBA002BBC95 /* CrashPushViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrashPushViewController.h; sourceTree = "<group>"; };
+		FC8319BD1EF2FBBA002BBC95 /* CrashPushViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrashPushViewController.m; sourceTree = "<group>"; };
+		FC8319BF1EF2FBBA002BBC95 /* CrashArrayTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrashArrayTableViewController.h; sourceTree = "<group>"; };
+		FC8319C01EF2FBBA002BBC95 /* CrashArrayTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrashArrayTableViewController.m; sourceTree = "<group>"; };
+		FC8319C11EF2FBBA002BBC95 /* CrashDictTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrashDictTableViewController.h; sourceTree = "<group>"; };
+		FC8319C21EF2FBBA002BBC95 /* CrashDictTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrashDictTableViewController.m; sourceTree = "<group>"; };
+		FC8319C31EF2FBBA002BBC95 /* CrashNSStringTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrashNSStringTableViewController.h; sourceTree = "<group>"; };
+		FC8319C41EF2FBBA002BBC95 /* CrashNSStringTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrashNSStringTableViewController.m; sourceTree = "<group>"; };
+		FC8319C51EF2FBBA002BBC95 /* CrashScopeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrashScopeViewController.h; sourceTree = "<group>"; };
+		FC8319C61EF2FBBA002BBC95 /* CrashScopeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrashScopeViewController.m; sourceTree = "<group>"; };
+		FC8319C81EF2FBBA002BBC95 /* CrashThreadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrashThreadViewController.h; sourceTree = "<group>"; };
+		FC8319C91EF2FBBA002BBC95 /* CrashThreadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrashThreadViewController.m; sourceTree = "<group>"; };
+		FC8319CB1EF2FBBA002BBC95 /* ProtecTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProtecTableViewController.h; sourceTree = "<group>"; };
+		FC8319CC1EF2FBBA002BBC95 /* ProtecTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProtecTableViewController.m; sourceTree = "<group>"; };
+		FC8319D81EF2FC41002BBC95 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		FC8319D91EF2FC41002BBC95 /* UIViewController+Switcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Switcher.h"; sourceTree = "<group>"; };
+		FC8319DA1EF2FC41002BBC95 /* UIViewController+Switcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Switcher.m"; sourceTree = "<group>"; };
+		FC8319E31EF35194002BBC95 /* KVOTwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVOTwoViewController.h; sourceTree = "<group>"; };
+		FC8319E41EF35194002BBC95 /* KVOTwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVOTwoViewController.m; sourceTree = "<group>"; };
+		FC8319E61EF35375002BBC95 /* KVOModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVOModel.h; sourceTree = "<group>"; };
+		FC8319E71EF35375002BBC95 /* KVOModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVOModel.m; sourceTree = "<group>"; };
+		FC8319E91EF356AC002BBC95 /* KVOOneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVOOneViewController.h; sourceTree = "<group>"; };
+		FC8319EA1EF356AC002BBC95 /* KVOOneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVOOneViewController.m; sourceTree = "<group>"; };
+		FC8319EC1EF3598A002BBC95 /* TestModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestModel.h; sourceTree = "<group>"; };
+		FC8319ED1EF3598A002BBC95 /* TestModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestModel.m; sourceTree = "<group>"; };
+		FC8319EF1EF35AB0002BBC95 /* KVOProtectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVOProtectViewController.h; sourceTree = "<group>"; };
+		FC8319F01EF35AB0002BBC95 /* KVOProtectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVOProtectViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,21 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				76B6F17B1E2F68350065BB3C /* LCXCashExtension */,
-				76B6F1671E2F67F50065BB3C /* AppDelegate.h */,
-				76B6F1681E2F67F50065BB3C /* AppDelegate.m */,
-				76B6F16A1E2F67F50065BB3C /* ViewController.h */,
-				76B6F16B1E2F67F50065BB3C /* ViewController.m */,
-				FCB0B50A1ECA6427000ED23F /* ProtectTest.h */,
-				FCB0B50B1ECA6427000ED23F /* ProtectTest.m */,
-				FCB0B50D1ECA6473000ED23F /* CrashTest.h */,
-				FCB0B50E1ECA6473000ED23F /* CrashTest.m */,
-				FCB0B5101ECA6715000ED23F /* TestModel.h */,
-				FCB0B5111ECA6715000ED23F /* TestModel.m */,
-				76B6F16D1E2F67F50065BB3C /* Main.storyboard */,
-				76B6F1701E2F67F50065BB3C /* Assets.xcassets */,
-				76B6F1721E2F67F50065BB3C /* LaunchScreen.storyboard */,
-				76B6F1751E2F67F50065BB3C /* Info.plist */,
-				76B6F1641E2F67F50065BB3C /* Supporting Files */,
+				FC8319D51EF2FBC7002BBC95 /* Demo */,
 			);
 			path = LCXCrashExtension;
 			sourceTree = "<group>";
@@ -130,6 +150,10 @@
 		76B6F1641E2F67F50065BB3C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				76B6F16D1E2F67F50065BB3C /* Main.storyboard */,
+				76B6F1701E2F67F50065BB3C /* Assets.xcassets */,
+				76B6F1721E2F67F50065BB3C /* LaunchScreen.storyboard */,
+				76B6F1751E2F67F50065BB3C /* Info.plist */,
 				76B6F1651E2F67F50065BB3C /* main.m */,
 			);
 			name = "Supporting Files";
@@ -184,6 +208,95 @@
 				76B6F1901E2F68350065BB3C /* NSString+LCXProtecteExtension.m */,
 			);
 			path = LCXProtectExtension;
+			sourceTree = "<group>";
+		};
+		FC8319B81EF2FBBA002BBC95 /* CrashKVO */ = {
+			isa = PBXGroup;
+			children = (
+				FC8319B91EF2FBBA002BBC95 /* CrashKVOViewController.h */,
+				FC8319BA1EF2FBBA002BBC95 /* CrashKVOViewController.m */,
+				FC8319E91EF356AC002BBC95 /* KVOOneViewController.h */,
+				FC8319EA1EF356AC002BBC95 /* KVOOneViewController.m */,
+				FC8319E31EF35194002BBC95 /* KVOTwoViewController.h */,
+				FC8319E41EF35194002BBC95 /* KVOTwoViewController.m */,
+				FC8319EF1EF35AB0002BBC95 /* KVOProtectViewController.h */,
+				FC8319F01EF35AB0002BBC95 /* KVOProtectViewController.m */,
+				FC8319E61EF35375002BBC95 /* KVOModel.h */,
+				FC8319E71EF35375002BBC95 /* KVOModel.m */,
+			);
+			path = CrashKVO;
+			sourceTree = "<group>";
+		};
+		FC8319BB1EF2FBBA002BBC95 /* CrashPush */ = {
+			isa = PBXGroup;
+			children = (
+				FC8319BC1EF2FBBA002BBC95 /* CrashPushViewController.h */,
+				FC8319BD1EF2FBBA002BBC95 /* CrashPushViewController.m */,
+			);
+			path = CrashPush;
+			sourceTree = "<group>";
+		};
+		FC8319BE1EF2FBBA002BBC95 /* CrashScope */ = {
+			isa = PBXGroup;
+			children = (
+				FC8319BF1EF2FBBA002BBC95 /* CrashArrayTableViewController.h */,
+				FC8319C01EF2FBBA002BBC95 /* CrashArrayTableViewController.m */,
+				FC8319C11EF2FBBA002BBC95 /* CrashDictTableViewController.h */,
+				FC8319C21EF2FBBA002BBC95 /* CrashDictTableViewController.m */,
+				FC8319C31EF2FBBA002BBC95 /* CrashNSStringTableViewController.h */,
+				FC8319C41EF2FBBA002BBC95 /* CrashNSStringTableViewController.m */,
+				FC8319C51EF2FBBA002BBC95 /* CrashScopeViewController.h */,
+				FC8319C61EF2FBBA002BBC95 /* CrashScopeViewController.m */,
+			);
+			path = CrashScope;
+			sourceTree = "<group>";
+		};
+		FC8319C71EF2FBBA002BBC95 /* CrashThread */ = {
+			isa = PBXGroup;
+			children = (
+				FC8319C81EF2FBBA002BBC95 /* CrashThreadViewController.h */,
+				FC8319C91EF2FBBA002BBC95 /* CrashThreadViewController.m */,
+				FC8319EC1EF3598A002BBC95 /* TestModel.h */,
+				FC8319ED1EF3598A002BBC95 /* TestModel.m */,
+			);
+			path = CrashThread;
+			sourceTree = "<group>";
+		};
+		FC8319CA1EF2FBBA002BBC95 /* Protect */ = {
+			isa = PBXGroup;
+			children = (
+				FC8319CB1EF2FBBA002BBC95 /* ProtecTableViewController.h */,
+				FC8319CC1EF2FBBA002BBC95 /* ProtecTableViewController.m */,
+			);
+			path = Protect;
+			sourceTree = "<group>";
+		};
+		FC8319D51EF2FBC7002BBC95 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				76B6F1671E2F67F50065BB3C /* AppDelegate.h */,
+				76B6F1681E2F67F50065BB3C /* AppDelegate.m */,
+				76B6F16A1E2F67F50065BB3C /* ViewController.h */,
+				76B6F16B1E2F67F50065BB3C /* ViewController.m */,
+				FC8319B81EF2FBBA002BBC95 /* CrashKVO */,
+				FC8319BB1EF2FBBA002BBC95 /* CrashPush */,
+				FC8319BE1EF2FBBA002BBC95 /* CrashScope */,
+				FC8319C71EF2FBBA002BBC95 /* CrashThread */,
+				FC8319CA1EF2FBBA002BBC95 /* Protect */,
+				76B6F1641E2F67F50065BB3C /* Supporting Files */,
+				FC8319D61EF2FC0F002BBC95 /* Other */,
+			);
+			name = Demo;
+			sourceTree = "<group>";
+		};
+		FC8319D61EF2FC0F002BBC95 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				FC8319D81EF2FC41002BBC95 /* PrefixHeader.pch */,
+				FC8319D91EF2FC41002BBC95 /* UIViewController+Switcher.h */,
+				FC8319DA1EF2FC41002BBC95 /* UIViewController+Switcher.m */,
+			);
+			path = Other;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,24 +372,35 @@
 			buildActionMask = 2147483647;
 			files = (
 				76BD3D441E6BBB7A00D58D9F /* NSMutableSet+LCXCrashExtension.m in Sources */,
+				FC8319D31EF2FBBA002BBC95 /* CrashThreadViewController.m in Sources */,
+				FC8319EB1EF356AC002BBC95 /* KVOOneViewController.m in Sources */,
+				FC8319EE1EF3598A002BBC95 /* TestModel.m in Sources */,
 				76B6F1961E2F68350065BB3C /* NSString+LCXCrashExtension.m in Sources */,
+				FC8319CE1EF2FBBA002BBC95 /* CrashPushViewController.m in Sources */,
+				FC8319E51EF35194002BBC95 /* KVOTwoViewController.m in Sources */,
 				76BD3D3B1E6BABE400D58D9F /* UINavigationController+LCXCrashExtension.m in Sources */,
-				FCB0B50C1ECA6427000ED23F /* ProtectTest.m in Sources */,
+				FC8319D01EF2FBBA002BBC95 /* CrashDictTableViewController.m in Sources */,
+				FC8319F11EF35AB0002BBC95 /* KVOProtectViewController.m in Sources */,
 				76B6F16C1E2F67F50065BB3C /* ViewController.m in Sources */,
-				FCB0B50F1ECA6473000ED23F /* CrashTest.m in Sources */,
 				76BD3D411E6BBACC00D58D9F /* NSSet+LCXCrashExtension.m in Sources */,
+				FC8319D41EF2FBBA002BBC95 /* ProtecTableViewController.m in Sources */,
+				FC8319E81EF35375002BBC95 /* KVOModel.m in Sources */,
 				76B6F1941E2F68350065BB3C /* NSMutableDictionary+LCXCrashExtension.m in Sources */,
 				76B6F1991E2F68350065BB3C /* NSString+LCXProtecteExtension.m in Sources */,
 				76B6F1931E2F68350065BB3C /* NSMutableArray+LCXCrashExtension.m in Sources */,
-				FCB0B5121ECA6715000ED23F /* TestModel.m in Sources */,
+				FC8319DC1EF2FC41002BBC95 /* UIViewController+Switcher.m in Sources */,
 				76B6F1691E2F67F50065BB3C /* AppDelegate.m in Sources */,
 				76BD3D471E6BBC7E00D58D9F /* NSUserDefaults+LCXCrashExtension.m in Sources */,
 				76B6F1911E2F68350065BB3C /* NSArray+LCXCrashExtension.m in Sources */,
+				FC8319CD1EF2FBBA002BBC95 /* CrashKVOViewController.m in Sources */,
+				FC8319CF1EF2FBBA002BBC95 /* CrashArrayTableViewController.m in Sources */,
 				76B6F1661E2F67F50065BB3C /* main.m in Sources */,
 				76B6F1921E2F68350065BB3C /* NSAttributedString+LCXCrashExtension.m in Sources */,
 				76B6F1971E2F68350065BB3C /* NSArray+LCXProtecteExtension.m in Sources */,
 				76B6F1951E2F68350065BB3C /* NSObject+LCXCrashExtension.m in Sources */,
 				76B6F1981E2F68350065BB3C /* NSDictionary+LCXProtecteExtension.m in Sources */,
+				FC8319D11EF2FBBA002BBC95 /* CrashNSStringTableViewController.m in Sources */,
+				FC8319D21EF2FBBA002BBC95 /* CrashScopeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,7 +519,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 99B7D3UEJ3;
+				GCC_PREFIX_HEADER = "${SRCROOT}/LCXCrashExtension/Other/PrefixHeader.pch";
 				INFOPLIST_FILE = LCXCrashExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.licheng.LCXCrashExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -407,7 +533,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 99B7D3UEJ3;
+				GCC_PREFIX_HEADER = "${SRCROOT}/LCXCrashExtension/Other/PrefixHeader.pch";
 				INFOPLIST_FILE = LCXCrashExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.licheng.LCXCrashExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";

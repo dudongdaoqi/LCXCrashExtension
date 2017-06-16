@@ -33,17 +33,17 @@
     }
 }
 
-- (id)parseObjectAtIndex:(NSInteger)index className:(NSString *)name{
+- (id)parseObjectAtIndex:(NSInteger)index className:(NSString *)className{
     if ([self isKindOfClass:[NSArray class]] && (self.count > index)) {
         id object = [self objectAtIndex:index];
-        if (object && [object isKindOfClass:[NSClassFromString(name) class]]) {
+        if (object && [object isKindOfClass:[NSClassFromString(className) class]]) {
             return object;
         }
     }
     return nil;
 }
 
-- (id)parseTableSection:(NSInteger)section row:(NSInteger)row className:(NSString *)name{
+- (id)parseTableSection:(NSInteger)section row:(NSInteger)row className:(NSString *)className{
     if (self && [self isKindOfClass:[NSArray class]]) {
         if (self.count > section) {
             id object = [self objectAtIndex:section];
@@ -51,7 +51,7 @@
                 NSArray *array = (NSArray *)object;
                 if (array.count > row) {
                     id teo = [array objectAtIndex:row];
-                    if (teo && [teo isKindOfClass:[NSClassFromString(name) class]]) {
+                    if (teo && [teo isKindOfClass:[NSClassFromString(className) class]]) {
                         return teo;
                     }
                 }

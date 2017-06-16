@@ -8,14 +8,13 @@
 //原理介绍请见：http://www.jianshu.com/p/2b2997749d2d
 
 #import "ViewController.h"
-#import "ProtectTest.h"
-#import "CrashTest.h"
-#import "TestModel.h"
 
-@interface ViewController ()
+@interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) NSString *kvc;
-@property (nonatomic, strong) TestModel *model;
+
+@property (nonatomic, strong) UITableView *tableview;
+@property (nonatomic, strong) NSArray *datasource;
 
 @end
 
@@ -23,63 +22,89 @@
 
 - (void)viewDidLoad{
     [super viewDidLoad];
-    [ProtectTest protectTest];
-    [CrashTest crashTest];
+    [self.view addSubview:self.tableview];
 }
 
-- (void)viewWillAppear:(BOOL)animated{
-    [self kvoTest];
+#pragma mark TableView
+
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    return 1;
 }
 
--(void)viewWillDisappear:(BOOL)animated{
-    [self kvoRemove];
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return self.datasource.count;
 }
 
-- (IBAction)pushAction:(id)sender {
-    [self pushTest];
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    static NSString *cellIdentifier = @"ViewController";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
+    }
+    cell.textLabel.text = [self name:indexPath.row];
+    return cell;
 }
 
-#pragma mark -kvo
 
-- (void)kvoTest{
-    [self addObserver:self forKeyPath:nil options:(NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld) context:nil];
-    [self addObserver:self forKeyPath:@"kvc" options:(NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld) context:nil];
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 50;
 }
 
-- (void)kvoRemove{
-    [self removeObserver:nil forKeyPath:@"kvc"];
-    [self removeObserver:self forKeyPath:nil];
-    [self removeObserver:self forKeyPath:@"kvc"];
-    dispatch_async(dispatch_get_main_queue(), ^{
-        [self removeObserver:self forKeyPath:@"kvc"];
-    });
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [self pushClassViewController:[self vc:indexPath.row] animated:YES];
 }
 
-#pragma mark push
+#pragma mark - getting
 
-- (void)pushTest{
-    [self.navigationController pushViewController:self animated:YES];
-    [self.navigationController pushViewController:self animated:YES];
-    [self.navigationController pushViewController:[[self class]new] animated:NO];
-    [self.navigationController pushViewController:self animated:NO];
-    [self.navigationController pushViewController:self animated:NO];
-}
-
-#pragma mark thread safe
-//此处crash，请注意
-- (IBAction)threadSafe:(id)sender {
-    for (int i = 0; i < 10000; i++){
-        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-            self.model = [TestModel new];
-        });
-        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-            self.model = [TestModel new];
-        });
-        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-            self.model = [TestModel new];
+- (NSArray *)datasource{
+    if (!_datasource) {
+        _datasource = ({
+            NSArray *array = @[@{@"VC":@"ProtecTableViewController",@"NAME":@"自我防御"},
+                               @{@"VC":@"CrashScopeViewController",@"NAME":@"容错不当造成的Crash"},
+                               @{@"VC":@"CrashKVOViewController",@"NAME":@"KVO造成的Crash"},
+                               @{@"VC":@"CrashThreadViewController",@"NAME":@"线程安全造成的Crash"},
+                               @{@"VC":@"CrashPushViewController",@"NAME":@"多次Push造成的Crash"},];
+            array;
         });
     }
+    return _datasource;
 }
+
+- (UITableView *)tableview{
+    if (!_tableview) {
+        _tableview = ({
+            UITableView *myTableview = [[UITableView alloc]initWithFrame:CGRectZero style:UITableViewStylePlain];
+            myTableview.frame = CGRectMake(0, 0, CGRectGetWidth(self.view.frame), CGRectGetHeight(self.view.frame));
+            myTableview.backgroundColor = [UIColor whiteColor];
+            myTableview.delegate = self;
+            myTableview.dataSource = self;
+            myTableview;
+        });
+    }
+    return _tableview;
+}
+
+
+- (NSString *)name:(NSInteger)row{
+    NSDictionary *dict = [self.datasource parseObjectAtIndex:row className:@"NSDictionary"];
+    if (dict) {
+        return [dict parseStringKey:@"NAME"];
+    }
+    return nil;
+}
+
+- (NSString *)vc:(NSInteger)row{
+    NSDictionary *dict = [self.datasource parseObjectAtIndex:row className:@"NSDictionary"];
+    if (dict) {
+        return [dict parseStringKey:@"VC"];
+    }
+    return nil;
+}
+
+
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

@@ -27,6 +27,7 @@
 
 /**
  is valid NSString
+ 是否为有效的字符串
  
  @return    yes or no,it has replaced the blank
  */

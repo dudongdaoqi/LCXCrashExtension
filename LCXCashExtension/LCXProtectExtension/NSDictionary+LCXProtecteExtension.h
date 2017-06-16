@@ -27,22 +27,25 @@
 
 /**
  is valid NSDictionary
-
+ 是否有效字典
+ 
  @return    yes or no
  */
 - (BOOL)isValueDict;
 
 /**
  parse NSDictionary in NSDictionary
-
+ 解析出字典中的字典
+ 
  @param key  the key of the value
  @return     the NSDictionary value
  */
 - (NSDictionary *)parseDictKey:(NSString *)key;
 
 /**
- parse NSDictionary in NSDictionary
- 
+ parse NSArray in NSDictionary
+ 解析出字典中的数组
+
  @param key  the key of the value
  @return     the NSDictionary value, possible is nil
  */
@@ -50,6 +53,7 @@
 
 /**
  parse NSString in NSDictionary
+ 解析出字典中的字符串
  
  @param key  the key of the value
  @return     the NSDictionary value, possible is nil
@@ -58,6 +62,7 @@
 
 /**
  parse any object in NSDictionary
+ 解析出字典中的对象
  
  @param key  the key of the value
  @return     the value, possible is nil

@@ -26,29 +26,32 @@
 
 /**
  is valid NSArray
-
+ 是否为有效的数组
+ 
  @return        yes or no
  */
 - (BOOL)isValueArray;
 
 /**
  parse array
-
+ 解析出数组中第index个classname类型的对象
+ 
  @param index    the index of the array
- @param name     the class name of the object in array
+ @param className     the class name of the object in array
  @return         a object
  */
-- (id)parseObjectAtIndex:(NSInteger)index className:(NSString *)name;
+- (id)parseObjectAtIndex:(NSInteger)index className:(NSString *)className;
 
 
 /**
-parse like tableview datasource
+ parse like tableview datasource
+ 解析出类tableview数据源数组中，第section中row下的classname类型的对象
 
  @param section  section data array
  @param row      row data array
- @param name     the class name of the object in array
+ @param className     the class name of the object in array
  @return         a object
  */
-- (id)parseTableSection:(NSInteger)section row:(NSInteger)row className:(NSString *)name;
+- (id)parseTableSection:(NSInteger)section row:(NSInteger)row className:(NSString *)className;
 
 @end

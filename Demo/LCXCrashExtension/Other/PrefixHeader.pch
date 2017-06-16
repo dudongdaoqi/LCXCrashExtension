@@ -1,0 +1,15 @@
+//
+//  PrefixHeader.pch
+//  LCXCrashExtension
+//
+//  Created by xulicheng on 17/6/16.
+//  Copyright © 2017年 licheng. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "LCXProtectCenter.h"
+#import "UIViewController+Switcher.h"
+
+#endif /* PrefixHeader_pch */
