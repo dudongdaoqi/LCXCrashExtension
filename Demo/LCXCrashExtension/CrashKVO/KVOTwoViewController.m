@@ -8,6 +8,7 @@
 
 #import "KVOTwoViewController.h"
 #import "KVOModel.h"
+#import "KVOThreeViewController.h"
 
 @interface KVOTwoViewController ()
 
@@ -26,8 +27,8 @@
     backBtn.frame = CGRectMake(100, 100, 60, 40);
     [backBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [self.view addSubview:backBtn];
+    
 }
-
 - (void)btnClicked:(UIButton *)sender{
     [KVOModel share].name = @"show";
 }

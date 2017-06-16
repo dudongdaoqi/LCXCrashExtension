@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		76A2547B1EF3B0A100D5A72D /* KVOThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A2547A1EF3B0A100D5A72D /* KVOThreeViewController.m */; };
+		76A2547E1EF3B17800D5A72D /* KVOFourViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A2547D1EF3B17800D5A72D /* KVOFourViewController.m */; };
+		76A254811EF3B53700D5A72D /* KVOFiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A254801EF3B53700D5A72D /* KVOFiveViewController.m */; };
+		76A254841EF3B54600D5A72D /* KVOSixViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A254831EF3B54600D5A72D /* KVOSixViewController.m */; };
 		76B6F1661E2F67F50065BB3C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B6F1651E2F67F50065BB3C /* main.m */; };
 		76B6F1691E2F67F50065BB3C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B6F1681E2F67F50065BB3C /* AppDelegate.m */; };
 		76B6F16C1E2F67F50065BB3C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B6F16B1E2F67F50065BB3C /* ViewController.m */; };
@@ -43,6 +47,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		76A254791EF3B0A100D5A72D /* KVOThreeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVOThreeViewController.h; sourceTree = "<group>"; };
+		76A2547A1EF3B0A100D5A72D /* KVOThreeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVOThreeViewController.m; sourceTree = "<group>"; };
+		76A2547C1EF3B17800D5A72D /* KVOFourViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVOFourViewController.h; sourceTree = "<group>"; };
+		76A2547D1EF3B17800D5A72D /* KVOFourViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVOFourViewController.m; sourceTree = "<group>"; };
+		76A2547F1EF3B53700D5A72D /* KVOFiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVOFiveViewController.h; sourceTree = "<group>"; };
+		76A254801EF3B53700D5A72D /* KVOFiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVOFiveViewController.m; sourceTree = "<group>"; };
+		76A254821EF3B54600D5A72D /* KVOSixViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVOSixViewController.h; sourceTree = "<group>"; };
+		76A254831EF3B54600D5A72D /* KVOSixViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVOSixViewController.m; sourceTree = "<group>"; };
 		76B6F1611E2F67F50065BB3C /* LCXCrashExtension.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LCXCrashExtension.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76B6F1651E2F67F50065BB3C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		76B6F1671E2F67F50065BB3C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -219,6 +231,14 @@
 				FC8319EA1EF356AC002BBC95 /* KVOOneViewController.m */,
 				FC8319E31EF35194002BBC95 /* KVOTwoViewController.h */,
 				FC8319E41EF35194002BBC95 /* KVOTwoViewController.m */,
+				76A254791EF3B0A100D5A72D /* KVOThreeViewController.h */,
+				76A2547A1EF3B0A100D5A72D /* KVOThreeViewController.m */,
+				76A2547C1EF3B17800D5A72D /* KVOFourViewController.h */,
+				76A2547D1EF3B17800D5A72D /* KVOFourViewController.m */,
+				76A2547F1EF3B53700D5A72D /* KVOFiveViewController.h */,
+				76A254801EF3B53700D5A72D /* KVOFiveViewController.m */,
+				76A254821EF3B54600D5A72D /* KVOSixViewController.h */,
+				76A254831EF3B54600D5A72D /* KVOSixViewController.m */,
 				FC8319EF1EF35AB0002BBC95 /* KVOProtectViewController.h */,
 				FC8319F01EF35AB0002BBC95 /* KVOProtectViewController.m */,
 				FC8319E61EF35375002BBC95 /* KVOModel.h */,
@@ -389,16 +409,20 @@
 				76B6F1991E2F68350065BB3C /* NSString+LCXProtecteExtension.m in Sources */,
 				76B6F1931E2F68350065BB3C /* NSMutableArray+LCXCrashExtension.m in Sources */,
 				FC8319DC1EF2FC41002BBC95 /* UIViewController+Switcher.m in Sources */,
+				76A254841EF3B54600D5A72D /* KVOSixViewController.m in Sources */,
 				76B6F1691E2F67F50065BB3C /* AppDelegate.m in Sources */,
 				76BD3D471E6BBC7E00D58D9F /* NSUserDefaults+LCXCrashExtension.m in Sources */,
+				76A2547B1EF3B0A100D5A72D /* KVOThreeViewController.m in Sources */,
 				76B6F1911E2F68350065BB3C /* NSArray+LCXCrashExtension.m in Sources */,
 				FC8319CD1EF2FBBA002BBC95 /* CrashKVOViewController.m in Sources */,
 				FC8319CF1EF2FBBA002BBC95 /* CrashArrayTableViewController.m in Sources */,
 				76B6F1661E2F67F50065BB3C /* main.m in Sources */,
 				76B6F1921E2F68350065BB3C /* NSAttributedString+LCXCrashExtension.m in Sources */,
 				76B6F1971E2F68350065BB3C /* NSArray+LCXProtecteExtension.m in Sources */,
+				76A254811EF3B53700D5A72D /* KVOFiveViewController.m in Sources */,
 				76B6F1951E2F68350065BB3C /* NSObject+LCXCrashExtension.m in Sources */,
 				76B6F1981E2F68350065BB3C /* NSDictionary+LCXProtecteExtension.m in Sources */,
+				76A2547E1EF3B17800D5A72D /* KVOFourViewController.m in Sources */,
 				FC8319D11EF2FBBA002BBC95 /* CrashNSStringTableViewController.m in Sources */,
 				FC8319D21EF2FBBA002BBC95 /* CrashScopeViewController.m in Sources */,
 			);

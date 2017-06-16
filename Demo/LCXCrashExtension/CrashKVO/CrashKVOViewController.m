@@ -23,8 +23,9 @@
 - (NSArray *)datasource{
     if (!_datasource) {
         _datasource = ({
-            NSArray *array = @[@{@"VC":@"KVOOneViewController",@"NAME":@"StashRemove"},
-                               @{@"VC":@"KVOProtectViewController",@"NAME":@"KVO自我保护"}];
+            NSArray *array = @[@{@"VC":@"KVOOneViewController",@"NAME":@"Stack驻留"},
+                               @{@"VC":@"KVOThreeViewController",@"NAME":@"Remove次数"},
+                               @{@"VC":@"KVOFiveViewController",@"NAME":@"线程问题"}];
             array;
         });
     }
