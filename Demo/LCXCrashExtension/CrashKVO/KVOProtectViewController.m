@@ -37,9 +37,7 @@
     [self removeObserver:nil forKeyPath:@"kvc"];
     [self removeObserver:self forKeyPath:nil];
     [self removeObserver:self forKeyPath:@"kvc"];
-    dispatch_async(dispatch_get_main_queue(), ^{
-        [self removeObserver:self forKeyPath:@"kvc"];
-    });
+    [self removeObserver:self forKeyPath:@"kvc"];
 }
 
 

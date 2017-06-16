@@ -40,7 +40,9 @@
 }
 
 - (void)btnClicked:(UIButton *)sender{
-    [KVOModel share].name = @"show";
+//    [KVOModel share].name = @"show";
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"pushname" object:nil];
+
 }
 
 @end

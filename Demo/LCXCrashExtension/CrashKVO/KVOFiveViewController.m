@@ -23,7 +23,6 @@
     self.view.backgroundColor = [UIColor whiteColor];
     [[KVOModel share] addObserver:self forKeyPath:@"name" options:NSKeyValueObservingOptionNew context:nil];
     
-
     self.showBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     [self.showBtn setTitle:@"show" forState:UIControlStateNormal];
     [self.showBtn addTarget:self action:@selector(btnClicked:) forControlEvents:UIControlEventTouchUpInside];

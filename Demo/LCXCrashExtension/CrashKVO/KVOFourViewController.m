@@ -30,6 +30,9 @@
 //    [[KVOModel share] removeObserver:self forKeyPath:@"name"];
 }
 
+- (void)go{
+    NSLog(@"go");
+}
 
 -(void)dealloc{
     NSLog(@"******%@******",NSStringFromSelector(_cmd));

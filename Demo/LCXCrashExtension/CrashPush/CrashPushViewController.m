@@ -16,9 +16,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self pushTest];
+    self.view.backgroundColor = [UIColor whiteColor];
+    UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [backBtn setTitle:@"show" forState:UIControlStateNormal];
+    [backBtn addTarget:self action:@selector(btnClicked:) forControlEvents:UIControlEventTouchUpInside];
+    backBtn.frame = CGRectMake(100, 100, 60, 40);
+    [backBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [self.view addSubview:backBtn];
 }
 
+- (void)btnClicked:(UIButton *)sender{
+    [self pushTest];
+}
 
 - (void)pushTest{
     [self.navigationController pushViewController:self animated:YES];
@@ -27,6 +36,7 @@
     [self.navigationController pushViewController:self animated:NO];
     [self.navigationController pushViewController:self animated:NO];
 }
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
