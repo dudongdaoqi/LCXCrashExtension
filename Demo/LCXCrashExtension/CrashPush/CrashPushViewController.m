@@ -16,6 +16,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    UITextView *text = [UITextView new];
+    text.frame = CGRectMake(0, 0, CGRectGetWidth([UIScreen mainScreen].bounds), CGRectGetHeight([UIScreen mainScreen].bounds)-64);
+    text.text = @" [self.navigationController pushViewController:self animated:YES];\n[self.navigationController pushViewController:self animated:YES];\n[self.navigationController pushViewController:[[self class]new] animated:NO];\n[self.navigationController pushViewController:self animated:NO];\n[self.navigationController pushViewController:self animated:NO];";
+    [self.view addSubview:text];
+    
     self.view.backgroundColor = [UIColor whiteColor];
     UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     [backBtn setTitle:@"show" forState:UIControlStateNormal];
