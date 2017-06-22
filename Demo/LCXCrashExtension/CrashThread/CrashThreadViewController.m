@@ -23,7 +23,6 @@
     [self threadSafe];
 }
 
-
 #pragma mark thread safe
 
 - (void)threadSafe {
@@ -39,7 +38,6 @@
         });
     }
 }
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
