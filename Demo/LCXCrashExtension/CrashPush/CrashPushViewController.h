@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CrashPushViewController : UITableViewController
+@interface CrashPushViewController : UIViewController
 
 @end

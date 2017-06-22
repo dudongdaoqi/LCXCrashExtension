@@ -24,28 +24,28 @@
 #import "NSObject+LCXCrashExtension.h"
 
 @implementation UINavigationController (LCXCrashExtension)
-
-+(void)load{
-    SEL originalSelector = @selector(pushViewController:animated:);
-    SEL swizzledSelector = @selector(lc_pushViewController:animated:);
-    [self exchangeInstanceMethod:[self class] originMethodSel:originalSelector replaceMethodSel:swizzledSelector];
-}
-
--(void)lc_pushViewController:(UIViewController *)viewController animated:(BOOL)animated{
-
-    if ([self isHaveContained:viewController]) {
-        return;
-    }
-    [self lc_pushViewController:viewController animated:animated];
-}
-
-- (BOOL)isHaveContained:(UIViewController *)viewController{
-    for (UIViewController *subVC in self.viewControllers) {
-        if ([subVC isEqual:viewController]) {
-            return YES;
-        }
-    }
-    return NO;
-}
+//
+//+(void)load{
+//    SEL originalSelector = @selector(pushViewController:animated:);
+//    SEL swizzledSelector = @selector(lc_pushViewController:animated:);
+//    [self exchangeInstanceMethod:[self class] originMethodSel:originalSelector replaceMethodSel:swizzledSelector];
+//}
+//
+//-(void)lc_pushViewController:(UIViewController *)viewController animated:(BOOL)animated{
+//
+//    if ([self isHaveContained:viewController]) {
+//        return;
+//    }
+//    [self lc_pushViewController:viewController animated:animated];
+//}
+//
+//- (BOOL)isHaveContained:(UIViewController *)viewController{
+//    for (UIViewController *subVC in self.viewControllers) {
+//        if ([subVC isEqual:viewController]) {
+//            return YES;
+//        }
+//    }
+//    return NO;
+//}
 
 @end

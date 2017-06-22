@@ -1,39 +1,39 @@
 //
-//  KVOTwoViewController.m
+//  PushBViewController.m
 //  LCXCrashExtension
 //
-//  Created by xulicheng on 17/6/16.
+//  Created by lc on 2017/6/20.
 //  Copyright © 2017年 licheng. All rights reserved.
 //
 
-#import "KVOTwoViewController.h"
-#import "KVOModel.h"
-#import "KVOThreeViewController.h"
+#import "PushBViewController.h"
 
-@interface KVOTwoViewController ()
+@interface PushBViewController ()
 
 @end
 
-@implementation KVOTwoViewController
+@implementation PushBViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title =@"B";
     
     self.view.backgroundColor = [UIColor whiteColor];
-    
-    self.title =@"KVOTwoViewController";
-    
     UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     [backBtn setTitle:@"show" forState:UIControlStateNormal];
     [backBtn addTarget:self action:@selector(btnClicked:) forControlEvents:UIControlEventTouchUpInside];
     backBtn.frame = CGRectMake(100, 100, 60, 40);
     [backBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [self.view addSubview:backBtn];
-    
 }
 
 - (void)btnClicked:(UIButton *)sender{
-    [KVOModel share].name = @"show";
+    [self pushTest];
 }
+
+- (void)pushTest{
+    [self.navigationController pushViewController:[NSClassFromString(@"PushCViewController") new] animated:YES];
+}
+
 
 @end

@@ -10,6 +10,10 @@
 		76A2547B1EF3B0A100D5A72D /* KVOThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A2547A1EF3B0A100D5A72D /* KVOThreeViewController.m */; };
 		76A2547E1EF3B17800D5A72D /* KVOFourViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A2547D1EF3B17800D5A72D /* KVOFourViewController.m */; };
 		76A254811EF3B53700D5A72D /* KVOFiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A254801EF3B53700D5A72D /* KVOFiveViewController.m */; };
+		76A254B01EF9116500D5A72D /* UINavigationController+Consistent.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A254AF1EF9116500D5A72D /* UINavigationController+Consistent.m */; };
+		76A254B31EF9136E00D5A72D /* PushAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A254B21EF9136E00D5A72D /* PushAViewController.m */; };
+		76A254B61EF9137600D5A72D /* PushBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A254B51EF9137600D5A72D /* PushBViewController.m */; };
+		76A254B91EF9137F00D5A72D /* PushCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A254B81EF9137F00D5A72D /* PushCViewController.m */; };
 		76B6F1661E2F67F50065BB3C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B6F1651E2F67F50065BB3C /* main.m */; };
 		76B6F1691E2F67F50065BB3C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B6F1681E2F67F50065BB3C /* AppDelegate.m */; };
 		76B6F16C1E2F67F50065BB3C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B6F16B1E2F67F50065BB3C /* ViewController.m */; };
@@ -52,6 +56,14 @@
 		76A2547D1EF3B17800D5A72D /* KVOFourViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVOFourViewController.m; sourceTree = "<group>"; };
 		76A2547F1EF3B53700D5A72D /* KVOFiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVOFiveViewController.h; sourceTree = "<group>"; };
 		76A254801EF3B53700D5A72D /* KVOFiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVOFiveViewController.m; sourceTree = "<group>"; };
+		76A254AE1EF9116500D5A72D /* UINavigationController+Consistent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+Consistent.h"; sourceTree = "<group>"; };
+		76A254AF1EF9116500D5A72D /* UINavigationController+Consistent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+Consistent.m"; sourceTree = "<group>"; };
+		76A254B11EF9136E00D5A72D /* PushAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushAViewController.h; sourceTree = "<group>"; };
+		76A254B21EF9136E00D5A72D /* PushAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushAViewController.m; sourceTree = "<group>"; };
+		76A254B41EF9137600D5A72D /* PushBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushBViewController.h; sourceTree = "<group>"; };
+		76A254B51EF9137600D5A72D /* PushBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushBViewController.m; sourceTree = "<group>"; };
+		76A254B71EF9137F00D5A72D /* PushCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushCViewController.h; sourceTree = "<group>"; };
+		76A254B81EF9137F00D5A72D /* PushCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushCViewController.m; sourceTree = "<group>"; };
 		76B6F1611E2F67F50065BB3C /* LCXCrashExtension.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LCXCrashExtension.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76B6F1651E2F67F50065BB3C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		76B6F1671E2F67F50065BB3C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -247,6 +259,14 @@
 			children = (
 				FC8319BC1EF2FBBA002BBC95 /* CrashPushViewController.h */,
 				FC8319BD1EF2FBBA002BBC95 /* CrashPushViewController.m */,
+				76A254B11EF9136E00D5A72D /* PushAViewController.h */,
+				76A254B21EF9136E00D5A72D /* PushAViewController.m */,
+				76A254B41EF9137600D5A72D /* PushBViewController.h */,
+				76A254B51EF9137600D5A72D /* PushBViewController.m */,
+				76A254B71EF9137F00D5A72D /* PushCViewController.h */,
+				76A254B81EF9137F00D5A72D /* PushCViewController.m */,
+				76A254AE1EF9116500D5A72D /* UINavigationController+Consistent.h */,
+				76A254AF1EF9116500D5A72D /* UINavigationController+Consistent.m */,
 			);
 			path = CrashPush;
 			sourceTree = "<group>";
@@ -397,9 +417,12 @@
 				FC8319D01EF2FBBA002BBC95 /* CrashDictTableViewController.m in Sources */,
 				FC8319F11EF35AB0002BBC95 /* KVOProtectViewController.m in Sources */,
 				76B6F16C1E2F67F50065BB3C /* ViewController.m in Sources */,
+				76A254B01EF9116500D5A72D /* UINavigationController+Consistent.m in Sources */,
 				76BD3D411E6BBACC00D58D9F /* NSSet+LCXCrashExtension.m in Sources */,
+				76A254B61EF9137600D5A72D /* PushBViewController.m in Sources */,
 				FC8319D41EF2FBBA002BBC95 /* ProtecTableViewController.m in Sources */,
 				FC8319E81EF35375002BBC95 /* KVOModel.m in Sources */,
+				76A254B91EF9137F00D5A72D /* PushCViewController.m in Sources */,
 				76B6F1941E2F68350065BB3C /* NSMutableDictionary+LCXCrashExtension.m in Sources */,
 				76B6F1991E2F68350065BB3C /* NSString+LCXProtecteExtension.m in Sources */,
 				76B6F1931E2F68350065BB3C /* NSMutableArray+LCXCrashExtension.m in Sources */,
@@ -412,6 +435,7 @@
 				FC8319CF1EF2FBBA002BBC95 /* CrashArrayTableViewController.m in Sources */,
 				76B6F1661E2F67F50065BB3C /* main.m in Sources */,
 				76B6F1921E2F68350065BB3C /* NSAttributedString+LCXCrashExtension.m in Sources */,
+				76A254B31EF9136E00D5A72D /* PushAViewController.m in Sources */,
 				76B6F1971E2F68350065BB3C /* NSArray+LCXProtecteExtension.m in Sources */,
 				76A254811EF3B53700D5A72D /* KVOFiveViewController.m in Sources */,
 				76B6F1951E2F68350065BB3C /* NSObject+LCXCrashExtension.m in Sources */,

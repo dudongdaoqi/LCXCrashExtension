@@ -26,9 +26,25 @@
 }
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {
-    UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"提示" message:@"background show" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
-    [alert show];
+    if ([self isCurrentViewControllerVisible]) {
+        UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"提示" message:@"background show" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+        [alert show];
+    }else{
+        NSLog(@"background show");
+    }
 }
+
+
+-(BOOL)isCurrentViewControllerVisible{
+    
+    NSLog(@"***firstObject***%@",self.navigationController.viewControllers.firstObject);
+    NSLog(@"***self***%@",self);
+    NSLog(@"%tu",[self.navigationController.viewControllers.firstObject isEqual:self]);
+    NSLog(@"%tu",(self.navigationController.viewControllers.firstObject  == self));
+    
+    return (self.isViewLoaded && self.view.window);
+}
+
 
 #pragma mark - Table view data source
 
@@ -56,7 +72,12 @@
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    [self pushClassViewController:[self vc:indexPath.row] animated:YES];
+    if (indexPath.row == 0) {
+        [self pushClassViewController:[self vc:indexPath.row] animated:YES];
+
+    }else{
+        [self isCurrentViewControllerVisible];
+    }
 }
 
 - (NSString *)name:(NSInteger)row{
@@ -77,7 +98,8 @@
 - (NSArray *)datasource{
     if (!_datasource) {
         _datasource = ({
-            NSArray *array = @[@{@"VC":@"KVOTwoViewController",@"NAME":@"Next"}];
+            NSArray *array = @[@{@"VC":@"KVOTwoViewController",@"NAME":@"Next"},
+                               @{@"VC":@"KVOTwoViewController",@"NAME":@"Next"}];
             array;
         });
     }
